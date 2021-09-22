@@ -103,5 +103,6 @@ void tranversal(){
     }
 }
 void queue_size(){
-    printf("%d",rear+1);
+    int a=rear-front+1;
+    printf(" the size of stack:%d",a);
 }
