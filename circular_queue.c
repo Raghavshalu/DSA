@@ -68,7 +68,7 @@ void dequeue(){
     }
 }
 int isfull(){
-    if(front==(front+1)%max){
+    if(front==(rear+1)%max){
         printf("queue is full\n");
         return 1;
     }
