@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Student" table="student">
+		<id name="stdid" type="java.lang.Integer">
+			<column name="stdid"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="stdname" type="java.lang.String">
+			<column name="stdname" length="50"></column>
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="email" length="45"></column>
+		</property>
+		<property name="age" type="java.lang.String">
+			<column name="age" length="15"></column>
+		</property>
+	</class>
+</hibernate-mapping>
